@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #000 !important; /* Fondo negro para toda la página */
+    color: #fff !important; /* Texto blanco */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+
+header.abajo {
+    background: #fff!important;
+    padding: 15px 20px;
+}
+
+header .logo {
+    position: relative;
+    color: #fff!important;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img.logo-image {
+    width: 40px;
+    height: auto;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff!important;
+    letter-spacing: 2px;
+    font-weight: normal; /* Quita la negrita */
+    transition: 0.7s;
+}
+
+.zona1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(https://mangatschool.com/wp-content/uploads/2021/03/curso-fundamentos-de-programacion-algoritmos.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+header.abajo .logo,
+header.abajo ul li a {
+    color: #000 !important;
+}
+
+/* Estilos para la sección "¿Quiénes Somos?" */
+.quienes-somos {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.titulo {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Añade espacio entre las columnas */
+}
+
+.columna {
+    flex: 1;
+    text-align: center;
+}
+
+.rectangulo-azul {
+    background-color: #3498db!important;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    margin: 20px auto; /* Añade margen al rectángulo azul */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangulo-azul img {
+    width: 50px;
+    height: 50px;
+    filter: brightness(0) invert(1); /* Hace que la imagen sea blanca */
+    margin-bottom: 10px; /* Añade margen inferior para separarlo del texto */
+}
+
+.columna p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify; /* Justifica el texto */
+}
+
+.carousel-item {
+    background-color: #000 !important; /* Fondo negro para los items del carrusel */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Asegura que los íconos de las flechas del carrusel sean blancos */
+}
+
+.container-fluid {
+    padding: 0 20px; /* Añade relleno horizontal */
+}
+
+.card {
+    border: none; /* Elimina el borde de las tarjetas */
+    height: 100%;
+}
+
+.card-img-top {
+    height: 300px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+.card-body {
+    padding: 2rem; /* Ajusta el relleno del cuerpo de la tarjeta */
+}
+
+.card.bg-primary {
+    background-color: #3498db; /* Cambia el color de fondo a azul */
+}
+
+.card-text {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    margin-bottom: 0; /* Elimina el margen inferior del texto */
+}
+.titulo.text-center {
+    text-align: center;
+    margin-bottom: 30px; /* Ajusta el margen inferior según sea necesario */
+}
+.contacto {
+    padding: 50px 0;
+}
+
+.titulo {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.divider {
+    width: 50px;
+    height: 0.5px;
+    background-color: #fff;
+    margin: 20px auto 30px; /* Margen top, auto para centrar horizontalmente, y margen bottom */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: block;
+    width: 150px; /* Ancho del botón */
+    margin-top: 20px; /* Espacio superior */
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.footer .bg-primary {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.footer p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer a {
+    font-size: 1.5em;
+}
+
+.footer a:hover {
+    color: #ccc;
+}
+
+.footer .text-white img {
+    width: 24px; /* Tamaño deseado */
+    height: 24px; /* Ajusta la altura según sea necesario */
+    filter: brightness(0) invert(1); /* Hace que los íconos sean blancos */
+    margin-right: 10px; /* Espacio entre los íconos */
+}
+
+@media (max-width: 576px) {
+    .presentacion {
+        display: none;
+    }
+}
+
+/* Media query para tabletas */
+@media (min-width: 577px) and (max-width: 992px) {
+    .presentacion {
+        display: none;
+    }
+}
